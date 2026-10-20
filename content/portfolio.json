@@ -1,0 +1,491 @@
+{
+  "albums": [
+    {
+      "slug": "demo",
+      "title": "示例作品",
+      "description": "模板自带的示例照片，可在后台替换为自己的作品。"
+    }
+  ],
+  "photos": [
+    {
+      "slug": "work-01",
+      "title": "示例作品 01",
+      "alt": "示例摄影作品 01，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "aaron-burden-rFjyEaAFbfA-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-02",
+      "title": "示例作品 02",
+      "alt": "示例摄影作品 02，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "albert-salim-aw8bNTZZhUM-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-03",
+      "title": "示例作品 03",
+      "alt": "示例摄影作品 03，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "albert-salim-sw8-TNH2MFo-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-04",
+      "title": "示例作品 04",
+      "alt": "示例摄影作品 04，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "alex-siale-qH36EgNjPJY-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-05",
+      "title": "示例作品 05",
+      "alt": "示例摄影作品 05，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "alexandra-1aCxlDogCCM-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-06",
+      "title": "示例作品 06",
+      "alt": "示例摄影作品 06，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "ashe-walker-AMvnXP98HuQ-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-07",
+      "title": "示例作品 07",
+      "alt": "示例摄影作品 07，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "buddy-an-MYXu9Zj1FXc-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-08",
+      "title": "示例作品 08",
+      "alt": "示例摄影作品 08，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "cheng-lin-SWmjxFob2SQ-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-09",
+      "title": "示例作品 09",
+      "alt": "示例摄影作品 09，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "coco-tafoya-52HbcHJnb5E-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-10",
+      "title": "示例作品 10",
+      "alt": "示例摄影作品 10，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "daniil-silantev--cY_x-urW6s-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-11",
+      "title": "示例作品 11",
+      "alt": "示例摄影作品 11，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "david-clode-4RwSPLee_h4-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-12",
+      "title": "示例作品 12",
+      "alt": "示例摄影作品 12，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "david-clode-zOBl2GTdMmc-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-13",
+      "title": "示例作品 13",
+      "alt": "示例摄影作品 13，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "dennis-yu-4FLmDMG6wQs-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-14",
+      "title": "示例作品 14",
+      "alt": "示例摄影作品 14，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "europeana-yYfvMR4-IwU-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-15",
+      "title": "示例作品 15",
+      "alt": "示例摄影作品 15，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "fatih-berat-orer-oajlEpl_m_w-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-16",
+      "title": "示例作品 16",
+      "alt": "示例摄影作品 16，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "filippo-e4cea4z7hMU-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-17",
+      "title": "示例作品 17",
+      "alt": "示例摄影作品 17，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "francis-nie-NIYfVmrMO74-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-18",
+      "title": "示例作品 18",
+      "alt": "示例摄影作品 18，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "gustavo-zambelli--T_MrBiiJX8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-19",
+      "title": "示例作品 19",
+      "alt": "示例摄影作品 19，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "harrison-steen-cSjCDWJ2Bg0-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-20",
+      "title": "示例作品 20",
+      "alt": "示例摄影作品 20，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "hennie-stander-PMhfO33osFE-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-21",
+      "title": "示例作品 21",
+      "alt": "示例摄影作品 21，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "ingmar-Mk3AqH8hqGQ-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-22",
+      "title": "示例作品 22",
+      "alt": "示例摄影作品 22，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "ingmar-Urr7MbStFL8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-23",
+      "title": "示例作品 23",
+      "alt": "示例摄影作品 23，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "james-lee-IljRc12rpYI-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-24",
+      "title": "示例作品 24",
+      "alt": "示例摄影作品 24，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "jeremy-bishop-j06lbRyrXgw-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-25",
+      "title": "示例作品 25",
+      "alt": "示例摄影作品 25，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "jerry-kavan-sGJomXn2Pu8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-26",
+      "title": "示例作品 26",
+      "alt": "示例摄影作品 26，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "jonas-degener-eR54mSiITFU-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-27",
+      "title": "示例作品 27",
+      "alt": "示例摄影作品 27，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "karsten-winegeart-xxsQl8zTdps-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-28",
+      "title": "示例作品 28",
+      "alt": "示例摄影作品 28，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "katie-puzatova-odn2LxXCoI8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-29",
+      "title": "示例作品 29",
+      "alt": "示例摄影作品 29，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "kc-shum-blQUWx0Jx_c-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-30",
+      "title": "示例作品 30",
+      "alt": "示例摄影作品 30，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "kevin-charit-KU9D4Sz6IDY-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-31",
+      "title": "示例作品 31",
+      "alt": "示例摄影作品 31，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "kevin-mueller-NdK8Ed-Qx3U-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-32",
+      "title": "示例作品 32",
+      "alt": "示例摄影作品 32，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "klara-kulikova-WS_7qiveZ2Y-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-33",
+      "title": "示例作品 33",
+      "alt": "示例摄影作品 33，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "marek-piwnicki-mkTkFLFlBD8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-34",
+      "title": "示例作品 34",
+      "alt": "示例摄影作品 34，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "matthew-stephenson-aucdU2787kM-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-35",
+      "title": "示例作品 35",
+      "alt": "示例摄影作品 35，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "meina-yin-gmIhG320kGs-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-36",
+      "title": "示例作品 36",
+      "alt": "示例摄影作品 36，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "mykhailo-amirdzhanian-NDQbSIBQEi0-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-37",
+      "title": "示例作品 37",
+      "alt": "示例摄影作品 37，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "omid-armin-QMlMWL4H9so-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-38",
+      "title": "示例作品 38",
+      "alt": "示例摄影作品 38，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "pascal-van-de-vendel-u_nsqfP2tWc-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-39",
+      "title": "示例作品 39",
+      "alt": "示例摄影作品 39，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "sagar-kulkarni-AqBs2LubTA0-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-40",
+      "title": "示例作品 40",
+      "alt": "示例摄影作品 40，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "sarlote-laura-jevdokimova-Y5p_0LW1xQg-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-41",
+      "title": "示例作品 41",
+      "alt": "示例摄影作品 41，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "sasha-matic-QQ2UBKYS85o-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-42",
+      "title": "示例作品 42",
+      "alt": "示例摄影作品 42，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "slava-auchynnikau-3wnG56iHn2g-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-43",
+      "title": "示例作品 43",
+      "alt": "示例摄影作品 43，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "slava-auchynnikau-GHbwG9FfIOY-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-44",
+      "title": "示例作品 44",
+      "alt": "示例摄影作品 44，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "slava-auchynnikau-P1_0ALdJRAg-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-45",
+      "title": "示例作品 45",
+      "alt": "示例摄影作品 45，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "slava-auchynnikau-mPH2x6OYRt8-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-46",
+      "title": "示例作品 46",
+      "alt": "示例摄影作品 46，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "steve-busch-vaknSP_Jrsg-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-47",
+      "title": "示例作品 47",
+      "alt": "示例摄影作品 47，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "townsend-walton-G7ppFb-sXEE-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    },
+    {
+      "slug": "work-48",
+      "title": "示例作品 48",
+      "alt": "示例摄影作品 48，发布前请填写真实画面描述",
+      "album": "demo",
+      "file": "wietse-jongsma-K_GLVR6O1ME-unsplash.jpg",
+      "description": "此为模板示例照片。请替换为你的摄影作品及介绍。",
+      "location": "",
+      "taken_at": ""
+    }
+  ]
+}

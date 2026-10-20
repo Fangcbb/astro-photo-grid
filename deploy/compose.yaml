@@ -1,0 +1,64 @@
+name: photo-portfolio
+services:
+  database:
+    image: postgres:16.10-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: portfolio
+      POSTGRES_USER: portfolio
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in deploy/.env}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U portfolio -d portfolio"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  directus:
+    image: directus/directus:11.17.4
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${CMS_PORT:-8055}:8055"
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      SECRET: ${DIRECTUS_SECRET:?Set a long random DIRECTUS_SECRET}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Set ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Set ADMIN_PASSWORD}
+      PUBLIC_URL: ${CMS_PUBLIC_URL:-http://localhost:8055}
+      DB_CLIENT: pg
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: portfolio
+      DB_USER: portfolio
+      DB_PASSWORD: ${DB_PASSWORD}
+      STORAGE_LOCATIONS: local
+      STORAGE_LOCAL_DRIVER: local
+      STORAGE_LOCAL_ROOT: ./uploads
+      TELEMETRY: "false"
+      WEBSOCKETS_ENABLED: "false"
+      MAX_PAYLOAD_SIZE: 80mb
+      FILES_MAX_UPLOAD_SIZE: 80mb
+    volumes:
+      - uploads:/directus/uploads
+      - extensions:/directus/extensions
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8055/server/ping').then(async r=>process.exit(r.ok && (await r.text())==='pong'?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 60s
+  website:
+    image: nginx:1.28.0-alpine
+    profiles: [site]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:${SITE_PORT:-8080}:80"
+    volumes:
+      - ../.publish:/srv/portfolio:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+volumes:
+  database:
+  uploads:
+  extensions:

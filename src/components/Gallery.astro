@@ -1,0 +1,32 @@
+---
+import type { Photo } from "~/lib/portfolio";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+interface Props {
+  photos: Photo[];
+}
+const { photos } = Astro.props;
+---
+{photos.length === 0 ? <p class="empty-state">作品正在整理中，敬请期待。</p> : (
+  <div class="gallery">
+    {photos.map((photo, index) => (
+      <figure>
+        <a class="photo-link" href={photo.large} data-fancybox="gallery" aria-label={`放大查看：${photo.title}`}>
+          <img src={photo.src} srcset={photo.srcset} sizes="(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 33vw" width={photo.width} height={photo.height} alt={photo.alt} loading={index < 3 ? "eager" : "lazy"} decoding="async" />
+          <span class="zoom" aria-hidden="true">↗</span>
+        </a>
+        <figcaption>
+          <a href={`/photos/${photo.slug}/`}>{photo.title}</a>
+          {photo.location && <span>{photo.location}</span>}
+        </figcaption>
+      </figure>
+    ))}
+  </div>
+)}
+<script>
+  import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
+  Fancybox.bind("[data-fancybox]", {
+    theme: "dark",
+    Carousel: { Toolbar: { display: { left: [], middle: [], right: ["close"] } } },
+  });
+</script>

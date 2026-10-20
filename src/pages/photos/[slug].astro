@@ -1,0 +1,30 @@
+---
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import { albums, photos } from "~/lib/portfolio";
+export function getStaticPaths() {
+  return photos.map((photo, index) => ({
+    params: { slug: photo.slug },
+    props: { photo, previous: photos[index - 1], next: photos[index + 1] },
+  }));
+}
+const { photo, previous, next } = Astro.props;
+const album = albums.find((a) => a.slug === photo.album);
+---
+<BaseLayout title={photo.title} description={photo.description || photo.alt} image={photo.large}>
+  <article class="shell photo-detail">
+    <a class="back" href={`/albums/${photo.album}/`}>← {album?.title}</a>
+    <img class="detail-image" src={photo.large} srcset={photo.srcset} sizes="(max-width: 1200px) 100vw, 1200px" width={photo.width} height={photo.height} alt={photo.alt} />
+    <div class="photo-description">
+      <h1>{photo.title}</h1>
+      <p>{photo.description}</p>
+      <dl>
+        {photo.location && <><dt>地点</dt><dd>{photo.location}</dd></>}
+        {photo.taken_at && <><dt>拍摄日期</dt><dd><time datetime={photo.taken_at}>{photo.taken_at}</time></dd></>}
+      </dl>
+    </div>
+    <nav class="photo-pagination" aria-label="浏览作品">
+      <span>{previous && <a href={`/photos/${previous.slug}/`}>← 上一幅</a>}</span>
+      <span>{next && <a href={`/photos/${next.slug}/`}>下一幅 →</a>}</span>
+    </nav>
+  </article>
+</BaseLayout>

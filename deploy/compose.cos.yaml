@@ -1,0 +1,13 @@
+# Apply together with compose.yaml. The SDK signs COS requests using S3 credentials.
+services:
+  directus:
+    environment:
+      STORAGE_LOCATIONS: cos,local
+      STORAGE_COS_DRIVER: s3
+      STORAGE_COS_KEY: ${COS_SECRET_ID:?Set COS_SECRET_ID}
+      STORAGE_COS_SECRET: ${COS_SECRET_KEY:?Set COS_SECRET_KEY}
+      STORAGE_COS_BUCKET: ${COS_BUCKET:?Example portfolio-1250000000}
+      STORAGE_COS_REGION: ${COS_REGION:?Example ap-shanghai}
+      STORAGE_COS_ENDPOINT: ${COS_ENDPOINT:?Example https://cos.ap-shanghai.myqcloud.com}
+      STORAGE_COS_FORCE_PATH_STYLE: "false"
+      STORAGE_COS_ACL: private

@@ -22,3 +22,12 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Generated portfolio data and display images
+.portfolio/
+public/media/
+.env.*
+!.env.example
+!deploy/.env.example
+
+.publish/

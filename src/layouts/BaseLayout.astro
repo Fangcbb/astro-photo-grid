@@ -1,51 +1,50 @@
 ---
 import "~/styles/reset.css";
 import "~/styles/base.css";
-
-import smartypants from "smartypants";
-
-const siteName = "Astro Photo Grid";
-
+import { site } from "~/lib/portfolio";
 export interface Props {
   title: string;
-  description: string;
-  image?: {
-    src: string;
-    alt: string;
-  };
+  description?: string;
+  image?: string;
 }
-
-const { title, description, image } = Astro.props;
-
+const { title, description = site.description, image } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const pageTitle = Astro.url.pathname === "/" ? title : `${title} · ${siteName}`;
+const pageTitle =
+  Astro.url.pathname === "/" ? site.name : `${title} · ${site.name}`;
 ---
-
-<html lang="en">
+<!doctype html>
+<html lang={site.lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title set:html={smartypants(pageTitle, 1)} />
-    <meta name="description" content={smartypants(description, 1)} />
-    <meta property="og:title" content={smartypants(title, 1)} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content={smartypants(description, 1)} />
     <meta property="og:url" content={canonicalURL} />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content={siteName} />
-    {
-      image && (
-        <>
-          <meta property="og:image" content={image.src} />
-          <meta property="og:image:alt" content={image.alt} />
-        </>
-      )
-    }
+    <meta property="og:locale" content={site.lang.replace("-", "_")} />
+    <meta property="og:site_name" content={site.name} />
+    {image && <meta property="og:image" content={new URL(image, Astro.site)} />}
+    <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
   </head>
   <body>
-    <slot />
+    <a class="skip-link" href="#main">跳转到作品</a>
+    <header class="site-header shell">
+      <a class="brand" href="/">{site.name}<span>{site.author}</span></a>
+      <nav aria-label="主导航">
+        <a href="/" aria-current={Astro.url.pathname === "/" ? "page" : undefined}>作品</a>
+        <a href="/about/" aria-current={Astro.url.pathname === "/about/" ? "page" : undefined}>关于</a>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer shell">
+      <p>© {new Date().getFullYear()} {site.author}</p>
+      <p>{site.copyright}</p>
+      <a href="#main">回到顶部 ↑</a>
+    </footer>
   </body>
 </html>

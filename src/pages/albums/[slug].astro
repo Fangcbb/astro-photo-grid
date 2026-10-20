@@ -1,0 +1,21 @@
+---
+import Gallery from "~/components/Gallery.astro";
+import BaseLayout from "~/layouts/BaseLayout.astro";
+import { albums } from "~/lib/portfolio";
+export function getStaticPaths() {
+  return albums.map((album) => ({
+    params: { slug: album.slug },
+    props: { album },
+  }));
+}
+const { album } = Astro.props;
+---
+<BaseLayout title={album.title} description={album.description || album.title} image={album.photos[0]?.large}>
+  <section class="intro shell">
+    <a class="back" href="/">← 全部作品</a>
+    <h1>{album.title}</h1>
+    <p>{album.description}</p>
+    <p class="muted">{album.photos.length} 幅作品</p>
+  </section>
+  <section class="shell works" aria-label={album.title}><Gallery photos={album.photos} /></section>
+</BaseLayout>
